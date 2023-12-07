@@ -1,2 +1,2 @@
-# Miel
+# Miel 🍯
 Miel Engine

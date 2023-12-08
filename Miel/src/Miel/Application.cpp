@@ -1,5 +1,8 @@
 #include "Application.h"
 
+#include "Miel/Events/ApplicationEvent.h"
+#include "Miel/Log.h"
+
 namespace Miel {
 	Application::Application()
 	{
@@ -13,6 +16,8 @@ namespace Miel {
 
 	void Application::Run()
 	{
+		WindowResizeEvent e(1280, 720);
+		ML_TRACE(e);
 		while (true);
 	}
 }

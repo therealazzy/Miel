@@ -4,6 +4,9 @@
     <Filter Include="Miel">
       <UniqueIdentifier>{CC14897C-B84B-8A0D-6138-70104D4E060F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Miel\Events">
+      <UniqueIdentifier>{30E3F51C-9C98-6E12-258D-68E991416516}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Miel.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Miel\EntryPoint.h">
       <Filter>Miel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Miel\Events\ApplicationEvent.h">
+      <Filter>Miel\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Miel\Events\Event.h">
+      <Filter>Miel\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Miel\Events\KeyEvent.h">
+      <Filter>Miel\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Miel\Events\MouseEvent.h">
+      <Filter>Miel\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Miel\Log.h">
       <Filter>Miel</Filter>

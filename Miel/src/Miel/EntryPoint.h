@@ -11,9 +11,6 @@ int main(int argc, char** argv)
 	Miel::Log::Init();
 	ML_CORE_WARN("Initialized Core log");
 	ML_INFO("Initialized Client log");
-	ML_TRACE(Miel::None);
-	ML_TRACE(Miel::EventCategoryApplication);
-	ML_TRACE(Miel::EventCategoryInput);
 	auto app = Miel::CreateApplication();
 	app->Run();
 	delete app;

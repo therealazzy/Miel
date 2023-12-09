@@ -2,8 +2,7 @@
 
 #include "Miel/Core.h"
 
-#include <string>
-#include <functional>
+
 
 namespace Miel {
 

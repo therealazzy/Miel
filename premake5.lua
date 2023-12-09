@@ -18,6 +18,9 @@ project "Miel"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "mlpch.h"
+	pchsource "Miel/src/mlpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

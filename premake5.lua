@@ -10,6 +10,11 @@ workspace "Miel"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "Miel/vendor/GLFW/include"
+
+include "Miel/vendor/GLFW"
+
 project "Miel"
 	location "Miel"
 	kind "SharedLib"
@@ -30,7 +35,13 @@ project "Miel"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

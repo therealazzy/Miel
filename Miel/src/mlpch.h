@@ -6,11 +6,14 @@
 #include <algorithm>
 #include <functional>
 
+#include <cstring>
 #include <sstream>
 #include <string>
 #include <vector>
 #include <unordered_map>
 #include <unordered_set>
+
+#include "Miel/Log.h"
 
 #ifdef ML_PLATFORM_WINDOWS
 #include <Windows.h>

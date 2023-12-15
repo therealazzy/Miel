@@ -21,6 +21,7 @@ namespace Miel {
 		inline void SetEventCallback(const EventCallbackFn& callback) override { m_Data.EventCallback = callback; }
 		void SetVsync(bool enabled) override;
 		bool IsVsync() const override;
+
 	private:
 		virtual void Init(const WindowProps& props);
 		virtual void Shutdown();
